@@ -1,0 +1,501 @@
+body {
+  height: 90vh;
+  font-family: fantasy;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  letter-spacing: 1px;
+  }
+  
+  header {
+  padding: 20px 0 20px 0;
+  border: solid 1px;
+  width: 73.3%;
+  background: linear-gradient(150deg, rgba(146, 4, 4, 0.678), rgb(255, 0, 0), #c46666b7);
+  }
+  
+  .right {
+  background: rgba(233, 221, 221, 0.993);
+  padding: 48px 0 48px 0;
+  flex: 1 1 55%;
+  height: 76%;
+  background: linear-gradient(150deg, rgba(248, 0, 0, 0.37), rgba(0, 153, 255, 0.329), #03434d)
+  }
+  
+  main {
+  background: rgba(15, 2, 2, 0.096);
+  padding: 48px 0 48px 0;
+  flex: 1 1 100px;
+  border: 4px solid;
+  position: relative;
+  bottom: 9.4%;
+  background: linear-gradient(150deg, rgba(248, 0, 0, 0.37), rgba(0, 153, 255, 0.329), #03434d)
+  }
+  
+  .main {
+  display: flex;
+  flex: 1;
+  }
+  
+  .textHeader {
+  position: relative;
+  color: rgba(0, 0, 0, 0.452);
+  margin: 40px;
+  text-decoration: none;
+  text-shadow: 0 0 1px;
+  letter-spacing: 2px;
+  font-size: medium;
+  right: 20px;
+  }
+  
+  .name {
+  position: relative;
+  bottom: 4%;
+  font-size: xx-large;
+  color: rgba(5, 4, 4, 0.932);
+  letter-spacing: 3px;
+  animation: name 3s infinite;
+  cursor: pointer;
+  }
+  @keyframes name {
+  25% {
+  scale: 1.2;
+  color: red;
+  text-shadow: 0 8px 10px red;
+  }
+  }
+  section{
+    display: flex;
+    width:70%;
+    height:40%;
+    position: relative;
+    left: 15%;
+  }
+.img1, .img2, .img3, .img4{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+  }
+ img:hover{
+    cursor: crosshair;
+    width: 50%;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+  .botonContactenos,.botonMasSobreNosotros {
+    display: flexbox;
+    top: 90px;
+    left: 10px;
+      padding: 3px 20px 20px;
+      height: 4%;
+      font-size: large;
+}
+  .botonContactenos,
+  .botonMasSobreNosotros,
+  .iniciar,
+  .iniciarAdmin {
+  background: rgb(247, 232, 232);
+  font-family: fantasy;
+  box-shadow: 3px 5px 7px black;
+  color: black;
+  border: solid 2px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  }
+  .botonMasSobreNosotros:hover,
+  .botonContactenos:hover,
+  .iniciar:hover,
+  .iniciarAdmin:hover {
+  background-image: linear-gradient(150deg, #9500, #09f, #00ddff);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-shadow: 0 2px 3px black;
+  }
+  .botonMasSobreNosotros:active,
+  .botonContactenos:active,
+  .iniciar:active,
+  .iniciarAdmin:active {
+  transform: scale(0.7);
+  }
+  .iniciar {
+  margin: 15px;
+  }
+  .textHeader:hover,
+  .contraseñaOlvidada:hover,
+  .registrarse:hover {
+    background: linear-gradient(150deg, #9500, #09f, #00ddff);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 0 2px 3px black;
+  }
+  .contraseñaOlvidada,
+  .registrarse{
+text-decoration: none;
+  }
+  .name:hover:active {
+  transform: scale(0.7);
+  color: #00ddff;
+  }
+  .usp{
+  position: relative;
+  right: 40px;
+  top: 10px;
+  }
+  #uss{
+  right: 55px;
+  }
+  .cuadroAmarillo{
+    background: yellow;
+    width: 80%;
+    height: 180px;
+    border-radius: 5%;
+    position: relative;
+    left: 34px;
+    top: 20px;
+  }
+  .cuadroRojo{
+    background: red;
+    border-radius: 10%;
+    width: 70px;
+height: 50px;
+z-index: -1;
+position: relative;
+left: 40%;
+bottom: 190px;
+  }
+  .contraseñaOlvidada{
+    position: relative;
+    top: 10px;
+  }
+  input {
+    border: solid 2px;
+    }
+@media only screen and (min-width: 320px) and (max-width: 469px) {
+.text{
+    width: 90%;
+}
+.cuadroRojo{
+    left: 56px;
+}
+  .botonContactenos,.botonMasSobreNosotros {
+    display: block;
+    top: 90px;
+    left: 10px;
+      padding: 3px 0px 45px;
+      height: 4%;
+      font-size: large;
+}
+.botonContactenos{
+    padding: 2px 12px 20px;
+}
+section{
+  width:90%;
+  height:20%;
+  left:5%;
+}
+img:hover{
+  width: 50%;
+}
+}
+
+  @media only screen and (min-width: 470px) and (max-width: 600px) {
+    .botonContactenos,.botonMasSobreNosotros {
+        display: flexbox;
+        top: 90px;
+        left: 10px;
+          padding: 3px 20px 20px;
+          height: 4%;
+          font-size: large;
+    }
+  .cuadroAmarillo{
+    left:0;
+  }
+  .text{
+    width: 90%;
+  }
+  .cuadroRojo{
+    left: 32%;
+  }
+  section{
+    width:70%;
+    height:30%;
+  }
+  }
+  @media only screen and (min-width: 600px) and (max-width: 714px) {
+
+    .botonContactenos, .botonMasSobreNosotros {
+        display: flexbox;
+        padding: 3px 20px 20px;
+        height: 4%;
+        font-size: large;
+        }
+        .botonContactenos{
+            top:90px;
+        }
+        section{
+          width:90%;
+          height:40%;
+          left:5%;
+        }
+        img:hover{
+          width: 50%;
+        }
+  }
+  @media only screen and (min-width: 715px) and (max-width: 767px) {
+  .botonContactenos, .botonMasSobreNosotros {
+  display: inline;
+  padding: 3px 20px 20px;
+  height: 4%;
+  font-size: large;
+  top: 90px;
+  }
+  .text{
+    width: 90%;
+  }
+  .contraseñaOlvidada{
+    display: block;
+  }
+  section{
+    width:90%;
+    height:43%;
+    left:5%;
+  }
+  img:hover{
+    width: 50%;
+  }
+  }
+  @media only screen and (max-width: 768px) {
+  body {
+  font-size: 16px;
+  }
+
+  header {
+      width: 100%;
+  }
+  main {
+      bottom: 2px;
+      height: 99%;
+  }
+  .right {
+      height: 100%;
+  }
+  .cuadroAmarillo{
+left: 22px;
+  }
+  .cuadroRojo{
+    left: 32%;
+  }
+  .botonContactenos,
+  .botonMasSobreNosotros {
+      margin: 10px auto;
+  }
+  .botonContactenos {
+      left: 0;
+  }
+  .botonMasSobreNosotros {
+      right: 0;
+      top: 90px;
+  }
+  .textHeader {
+      margin: 20px;
+      left: 2px;
+  }
+  }
+  
+  @media only screen and (min-width: 769px) and (max-width: 991px) {
+    .botonContactenos,.botonMasSobreNosotros {
+        display: flexbox;
+        top: 90px;
+        left: 10px;
+          padding: 3px 20px 25px;
+          height: 4%;
+          font-size: large;
+    }
+  header {
+  width: 100%;
+  }
+  main {
+  bottom: 2px;
+  height: 99.3%;
+  }
+  .right {
+  height: 100%;
+  }
+  .contraseñaOlvidada {
+  display: block;
+  }
+  .cuadroAmarillo{
+    left:11%;
+  }
+  .cuadroRojo{
+    left: 35%;
+  }
+  .text{
+    width: 90%;
+}
+section{
+  width:90%;
+  height:48%;
+  left:5%;
+}
+img:hover{
+  width: 50%;
+}
+}
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .botonContactenos,.botonMasSobreNosotros {
+        display: flexbox;
+        top: 90px;
+        left: 10px;
+          padding: 5px 20px 30px;
+          height: 4%;
+          font-size: large;
+    }
+  header {
+  width: 100%;
+  }
+  main {
+  bottom: 2px;
+  height: 99.3%;
+  }
+  .right {
+  height: 100%;
+  }
+  .contraseñaOlvidada {
+  display: block;
+  }
+  .text{
+    width: 90%;
+  }
+  section{
+    width:90%;
+    height:51%;
+    left:5%;
+  }
+  img:hover{
+    width: 50%;
+  }
+}
+  
+  @media only screen and (min-width: 1200px) {
+  body{
+    font-size:large;
+  }
+  
+    .iniciar {
+  margin: 25px;
+  width: 130px;
+  font-size: large;
+  }
+  .iniciarAdmin {
+  width: 300px;
+  height: 30px;
+  font-size: large;
+  }
+  .botonContactenos, 
+  .botonMasSobreNosotros {
+      right:10%;
+      height: 60px;
+      font-size: x-large;
+  }
+  .botonContactenos {
+top: 58px;
+}
+ .botonMasSobreNosotros{
+    left: 10%;
+ }
+  header {
+      width: 100%;
+  }
+  main {
+      bottom: 2px;
+      height: 99.3%;
+  }
+  .right {
+      height: 100%;
+  }
+  .contraseñaOlvidada {
+      display: block;
+  }
+  .text{
+    width: 90%;
+  }
+  section{
+    width:90%;
+    height:55%;
+    left:5%;
+  }
+  img:hover{
+    width: 50%;
+  }
+  }
+  @media only screen and (min-width: 1231px) {
+  .iniciar {
+  margin: 30px;
+  }
+  }
+  @media only screen and (min-width: 1514px) {
+  .botonContactenos,.botonMasSobreNosotros {
+    display: flexbox;
+    top: 90px;
+    left: 10px;
+      padding: 3px 20px 20px;
+      height: 4%;
+      font-size: large;    
+}
+section{
+  width:90%;
+  height:60%;
+  left:5%;
+}
+img:hover{
+  width: 50%;
+}
+  }
+  @media only screen and (min-width: 600px) and (max-width: 600px) {
+  .botonMasSobreNosotros {
+  right: 0;
+  top: 90px;
+  }
+  .botonContactenos {
+  left: 0;
+  top: 80px;
+  }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 768px) {
+  .botonContactenos,.botonMasSobreNosotros {
+      display: flexbox;
+      top: 90px;
+      left: 10px;
+        padding: 3px 20px 20px;
+        height: 4%;
+        font-size: large;
+  }
+  .cuadroAmarillo{
+    left: 10%;
+  }
+  .cuadroRojo{
+    left: 34%;
+  }
+  .contraseñaOlvidada{
+    display: block;
+  }
+  section{
+    width:90%;
+    height:45%;
+    left:5%;
+  }
+  img:hover{
+    width: 50%;
+  }
+  }
+
+
+  

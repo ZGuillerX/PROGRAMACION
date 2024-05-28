@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retiro de Dinero</title>
+    <link rel="stylesheet" href="cajero.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="bienvenido">Bienvenido</h1>
+    </header>
+    <main>
+      <section
+        data-id="seccionMonto"
+        id="seccionMonto"
+        class="ocultarSeccionMonto"
+      >
+        <h2 class="monto-texto">Tu Monto</h2>
+        <h1 id="textoMonto" data-id="textoMonto" class="textoMonto"></h1>
+      </section>
+      <button
+        data-id="btn-mostrarMonto"
+        id="btn-mostrarMonto"
+        class="btn-mostrarMonto"
+      >
+        Mostrar Monto
+      </button>
+      <button
+        data-id="btn-ocultarMonto"
+        id="btn-ocultarMonto"
+        class="btn-ocultarMonto"
+      >
+        Ocultar Monto
+      </button>
+      <section data-id="seccion" id="seccion" class="ocultar">
+        <h2 class="contraseña">Contraseña:</h2>
+        <input type="password" id="contrasena" />
+        <br /><br />
+        <h2 class="ingresar-cantidad">Ingresar La Cantidad a Retirar:</h2>
+        <input type="number" id="cantidadRetirar" min="1" />
+        <br /><br />
+        <button id="btn-retirarDinero">Retirar Dinero</button>
+      </section>
+      <button data-id="btn-retirar" id="btn-retirar">Retirar</button>
+      <button data-id="btn-cambiarContraseña" id="btn-cambiarContraseña">
+        Cambiar Contraseña
+      </button>
+    </main>
+    <aside>
+      <ul data-id="factura" class="ocultarFactura">
+        <li>
+          <h2>Factura</h2>
+          <p id="contenidoFactura"></p>
+        </li>
+      </ul>
+    </aside>
+    <footer>
+      <p>&copy; 2024 Retiro de Dinero</p>
+    </footer>
+    <script src="cajero.js"></script>
+  </body>
+</html>

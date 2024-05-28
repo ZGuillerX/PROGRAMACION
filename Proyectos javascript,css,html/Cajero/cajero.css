@@ -1,0 +1,122 @@
+/* Estilos para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsla(0, 5%, 74%, 0.993);
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el contenido principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+/* Estilos para el área lateral */
+aside {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+.bienvenido{
+    text-align: center;
+}
+#montoD,#retirarD,#contrasena,#cantidadRetirar{
+    padding: 5px;
+    position: relative;
+    left: 35px;
+}
+.monto-texto,
+.contraseña,
+.ingresar-cantidad{
+    text-align: center;
+    position: relative;
+    left:10px;
+    font-size: medium;
+}
+#btn-retirarDinero{
+    position: relative;
+    left: 75px;
+    padding: 10px;
+}
+#btn-retirar,#btn-mostrarMonto{
+    position: relative;
+    left: 187px;
+    height: 40px;
+    width: 80px;
+    display: block;
+    margin: 20px;
+}
+#btn-retirar{
+position: relative;
+top: 60px;
+}
+#textoMonto{
+    position: relative;
+left: 15px;
+bottom: 5px;
+font-family: fantasy;
+letter-spacing: 1px;
+}
+#btn-ocultarMonto {
+    padding: 10px;
+ position: relative;
+ right: 180px;
+ bottom: 60px;
+    display: none;
+}
+
+.ocultar{
+display: none;
+}
+.ocultarSeccionMonto{
+    display: none;
+}
+/* Estilos para la factura */
+.ocultarFactura {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.ocultarFactura li {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.ocultarFactura h2 {
+    margin-top: 0;
+}
+
+.ocultarFactura p {
+    margin: 5px 0;
+}
+
+#btn-cambiarContraseña{
+    padding: 10px;
+    position: relative;
+    right: 160px;
+}
