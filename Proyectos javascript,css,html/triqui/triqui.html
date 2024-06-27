@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cambiar Color</title>
+    <link rel="stylesheet" href="triqui.css" />
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Juego de Triqui</title>
+      </head>
+      <body>
+        <div id="tabla">
+          <table>
+            <tr>
+              <td id="cell-0" class="celdas"></td>
+              <td id="cell-1" class="celdas"></td>
+              <td id="cell-2" class="celdas"></td>
+            </tr>
+            <tr>
+              <td id="cell-3" class="celdas"></td>
+              <td id="cell-4" class="celdas"></td>
+              <td id="cell-5" class="celdas"></td>
+            </tr>
+            <tr>
+              <td id="cell-6" class="celdas"></td>
+              <td id="cell-7" class="celdas"></td>
+              <td id="cell-8" class="celdas"></td>
+            </tr>
+          </table>
+          <button id="vaciarTabla">Reinicar Juego</button>
+          <button id="regresarInicio">Regresar Lobby</button>
+        </div>
+        <div id="mostrarTabla">
+          <p id="modoDeJuego">Elige el modo de juego</p>
+          <button id="btnSolo">Solo</button>
+          <button id="btnAmigo">Con Amigo</button>
+        </div>
+        <div id="selectShape">
+          <p class="selectText">Seleccione una opcion</p>
+          <p class="textJugador">Para el jugador 1</p>
+          <button id="btnX">X</button>
+          <button id="btnO">O</button>
+        </div>
+        <div id="displaytextStarted">
+          <p class="textJugador1"></p>
+          <p class="textJugador2"></p>
+          <div id="loading">Seleccionando...</div>
+          <button id="btnContinuar">Continuar</button>
+        </div>
+        <div id="displayWinner">
+          <p id="textWe"></p>
+          <button id="keepPlaying">Continuar</button>
+          <button id="changeMode">Cambiar Modo</button>
+        </div>
+        <script src="triqui.js"></script>
+      </body>
+    </html>
+  </body>
+</html>
