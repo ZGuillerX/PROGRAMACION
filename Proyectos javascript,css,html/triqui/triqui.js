@@ -192,11 +192,11 @@ function determinarGanador() {
       }
     }if(modoDeJuego === "Solo"){
       if ($celdas[a].textContent === seleccionarForma) {
-        $textWe.textContent = "¡Ganaste con la forma" + "!";
+        $textWe.textContent = "¡Ganaste";
          $displayWinner.style.display = "block"
         $selectShape.style.display = "none"
       } else {
-        $textWe.textContent = "¡Gana La Ia con la forma" +  "!";
+        $textWe.textContent = "¡Gana La Ia;
          $displayWinner.style.display = "block"
         $selectShape.style.display = "none"
       }
