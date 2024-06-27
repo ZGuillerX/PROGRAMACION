@@ -1,0 +1,65 @@
+* {
+    font-size: medium;
+    font-family: fantasy;
+    letter-spacing: 1px;
+  }
+  
+  body {
+    display: flex;
+    place-content: center;
+    align-content: center;
+    height: 90vh; 
+  }
+  
+  .imagen {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .contenedor {
+    background: red;
+    width: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .producto {
+    margin-bottom: 20px;
+  }
+  
+  .botones {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  .btnAgregar,
+  .btnEliminar {
+    width: 20px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: bisque;
+  }
+  
+  .btnAgregar:hover,
+  .btnEliminar:hover {
+    background: rgb(78, 155, 243);
+    color: rgb(107, 223, 223);
+  }
+  
+  .eliminarTodo {
+    width: 120px;
+    height: 30px;
+    margin-top: 20px;
+  }
+  
+  .textoOculto {
+    display: none;
+  }
