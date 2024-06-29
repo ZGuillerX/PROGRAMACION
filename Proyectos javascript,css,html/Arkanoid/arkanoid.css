@@ -1,0 +1,82 @@
+body {
+  background: rgba(0, 0, 0, 0.699);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin: 0;
+  flex-direction: column; /* Para organizar los elementos en columna */
+}
+
+#scoreContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px; /* Espacio entre el puntaje y el canvas */
+}
+
+#contanierLose{
+  display: none;
+}
+canvas {
+  border: 4px solid white;
+  border-bottom: transparent;
+  background: black;
+  max-width: 90%;
+  height: auto;
+}
+
+#score, #textScore{
+  color: white;
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+#textLose,#totalScore {
+  color: white;
+  font-size: 12vw;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#textLose{
+ position: relative;
+ left:60px;
+}
+#btnRestartGame{
+  font-weight: bold;
+  background: black;
+  color: white;
+  font-size:6vw ;
+  padding: 10px 20px;
+  margin-left: 80px;
+}
+#btnRestartGame:hover{
+background: white;
+color: black;
+}
+#btnRestartGame:active{
+scale: 0.8;
+transition: 0.4s;
+}
+
+
+
+@media (max-width: 768px) {
+  #score, #textScore {
+    font-size: 8vw;
+  }
+
+  canvas {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #score, #textScore {
+    font-size: 10vw;
+  }
+
+  canvas {
+    max-width: 100%;
+  }
+}

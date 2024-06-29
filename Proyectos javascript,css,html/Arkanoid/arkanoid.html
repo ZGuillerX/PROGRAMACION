@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="arkanoid.css" />
+  </head>
+  <body>
+    <div id="scoreContainer">
+      <div id="textScore">Score</div>
+      <div id="score">0</div>
+    </div>
+    <div id="contanierLose">
+      <p id="textLose">You Lose</p>
+      <p id="totalScore"></p>
+      <button id="btnRestartGame">Restart Game</button>
+    </div>
+    <canvas> </canvas>
+    <img hidden id="sprite" src="sprite.png" alt="Sprite Arkanoid" />
+    <img hidden id="bricks" src="bricks.png" alt="Sprite Bricks Arkanoid" />
+    <script src="arkanoid.js"></script>
+  </body>
+</html>
