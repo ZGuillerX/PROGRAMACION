@@ -1,0 +1,205 @@
+* {
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+}
+
+#container {
+  display: grid;
+  grid-template-rows: 12% 100%;
+  grid-template-columns: minmax(60%, 80%);
+  height: 89vh;
+  width: auto;
+  grid-template-areas:
+    "header header header"
+    "aside aside main"
+    "footer footer footer";
+}
+
+#container header {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b); 
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px 60px;
+  font-size: x-large;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 10px; 
+}
+
+#container header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s ease;
+}
+
+#container header a:hover {
+  color: #ffdfba;
+}
+
+#container aside {
+  background: linear-gradient(180deg, #f9f9f9, #e6e6e6);
+  grid-area: aside;
+  padding: 10px;
+  border-right: 2px solid #ccc;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#container aside img {
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
+
+#container aside img:hover {
+    width: 60%;
+    opacity: 1;
+    filter: contrast(150%);
+    cursor: crosshair;
+    transform: scale(1.05);
+}
+
+#container aside > section {
+  display: flex;
+  justify-content: center;
+  gap: 0 3px;
+}
+
+#container aside h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 5px;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#container aside > div:first-of-type {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  gap: 0 7%;
+  height: 6%;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+#container main {
+  background: linear-gradient(180deg, #d4e7fe, #a9c9ff);
+  grid-area: main;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px; 
+  display: flex;
+  text-align: center;
+}
+
+#container main h2 {
+  color: #333; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 20px;
+}
+
+#container main input,
+#container main button {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#container main input:focus,
+#container main button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); 
+}
+
+#container main form a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#container main form a:hover {
+  color: #0056b3;
+}
+
+button {
+  font-size: 15px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 0.25rem;
+  transition: 0.2s;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+button:active {
+  scale: 0.9;
+  transform: translateY(1px);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); 
+}
+
+#textUser {
+  margin-right: 125px;
+}
+
+#textPassword {
+  margin-right: 100px;
+}
+
+#container main button {
+  margin: 12px;
+  margin-top: 25px;
+}
+
+.btnStart {
+  width: 50%;
+  height: auto;
+}
+
+#container main form a {
+  position: relative;
+  top: 5px;
+}
+
+#inputPassword {
+  margin-bottom: 10px;
+}
+
+#search {
+  margin-top: 10px;
+  border-radius: 10%;
+}
+
+@media screen and (min-width: 700px) and (max-width: 2000px) {
+  #container aside img:hover {
+    width: 20%;
+  }
+}
+
